@@ -1,695 +1,700 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
-  <link rel="shortcut icon" href="./assets/images/icon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="./assets/css/style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Portfolio</title>
+	<link rel="shortcut icon" href="./assets/images/icon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="./assets/css/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <main>
-
-    <aside class="sidebar" data-sidebar>
-      <div class="sidebar-info">
-        <figure class="avatar-box">
-          <img src="./assets/images/icon.ico" alt="Ashul Gupta" width="80">
-        </figure>
-
-        <div class="info-content">
-          <h1 class="name" title="Ashul Gupta">Ashul Gupta</h1>
-          <p class="title">Senior Software Developer</p>
-        </div>
-
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
-      </div>
-
-      <div class="sidebar-info_more">
-
-        <div class="separator"></div>
-        
-        <ul class="contacts-list">
-          <li class="contact-item">
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-              <a href="mailto:ashul2173@gmail.com" class="contact-link">ashul2173@gmail.com</a>
-            </div>
-          </li>
-
-          <li class="contact-item">
-            <div class="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
-            </div>
-            <div class="contact-info">
-              <p class="contact-title">Phone</p>
-              <a href="tel:+919417444459" class="contact-link">+91-94174-44459</a>
-            </div>
-          </li>
-
-          <li class="contact-item">
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
-              <address>Bathinda, Punjab, India</address>
-            </div>
-          </li>
-        </ul>
-
-        <div class="separator"></div>
-
-      </div>
-    </aside>
-
-
-    <div class="main-content">
-      <nav class="navbar">
-        <ul class="navbar-list">
-          <li class="navbar-item">
-            <button class="navbar-link active" data-nav-link>About</button>
-          </li>
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Experience</button>
-          </li>
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Projects</button>
-          </li>
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
-          </li>
-        </ul>
-      </nav>
-
-      
-      <article class="about active" data-page="about">
-        <header>
-          <h2 class="h2 article-title">About me</h2>
-        </header>
-
-        <section class="about-text">
-          <p>
-            I am Ashul Gupta, a passionate senior software developer who loves the conjunction of art, code and logic.
-            I work as a tech savvy to make automated, fun little apps and scripts as a hobby and to make a living.
-          </p>
-          <p>
-            My job is to build, modify and optimize backend applications so as to not only improve customer experience 
-            but also improve the processing speed at the same time.
-            Moreover, I follow adept in creating scripts for automation which might handy during the maintenance of the application. In this fast-paced industry, I am always excited to learn new skills and software.
-          </p>
-        </section>
-
-        <section class="service">
-          <h3 class="h3 service-title">Education</h3>
-          <ul class="service-list">
-            <li class="service-item">
-              <div class="service-icon-box">
-                <img src="./assets/images/bits.jpg
-                " alt="design icon" width="240">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Birla Institute of Technology & Science, Pilani</h4>
-                <p class="service-item-text">
-                  Electrical and Electronics Engineering (B.E. Hons.) (2017-2021)
-                </p>
-                <p class="service-item-text">
-                  Relevant courses - Object Oriented Programming, Probability and Statistics, 
-                  Operating Systems, Data Structures and Algorithms
-                </p>
-              </div>
-            </li>
-          </ul>
-        </section>
-      </article>
-
-      <article class="experience" data-page="experience">
-        <header>
-          <h2 class="h2 article-title">Experience</h2>
-        </header>
-
-        <section class="timeline">
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="laptop-outline"></ion-icon>
-            </div>
-            <h3 class="h3">One97 Communications Pvt. Ltd</h3>
-          </div>
-
-          <ol class="timeline-list">
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Senior Software Engineer</h4>
-              <span>04/2023 - Present</span>
-              <p class="timeline-text">
-                ○	&emsp;	Reduced expenses by compressing the kibana log size by about 15% (2TB over 6 applications)
-                <br>
-                ○	&emsp;	Optimised the applications by logically removing redundant SQL queries
-                <br>
-                ○	&emsp;	Modified the applications to be able to deploy the same codebase over separate production infra
-                <br>
-                ○	&emsp;	Uniformized the sharding logic for every read/write SQL query
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Software Engineer</h4>
-              <span>06/2021 - 03/2023</span>
-              <p class="timeline-text">
-                ○	&emsp;	Spearheaded the delivery of an ambitious feature within 3 months with a small team of 10 people
-                <br>
-                ○	&emsp;	Developed the feature to allow merchants to customise their payout times
-                <br>
-                ○	&emsp;	Integrated Virtual Table with the application to make it capable to change critical variables in real-time without any downtime or redeployment
-                <br>
-                ○	&emsp;	Engineered a system for storing transactions, generating bills and payouts for merchants with T+n settlement cycle auto scalable to 3000 TPS
-                <br>
-                ○	&emsp;	Represented the team on a multi-team fundloss project to validate data integrity between teams' databases
-                <br>
-                ○	&emsp;	Resolved production issues by using Google Sheets and creating python scripts to generate over 20000 DTOs
-                <br>
-                ○	&emsp;	Mentored interns to integrate with the team and its culture and coordinated with them with their daily tasks
-              </p>
-            </li>
-
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Software Engineer Intern</h4>
-              <span>01/2021 - 06/2021</span>
-              <p class="timeline-text">
-                ○	&emsp;	Migrated 8 APIs as part of application server migration from Alipay server to AWS
-				<br>
-				○	&emsp;	Enhanced the application to manage transactions, settlements, summaries, etc. of merchants in real time
-				<br>
-				○	&emsp;	Integrated the application to an Elasticsearch server to provide complete data to merchants handling 60000 RPS
-              </p>
-            </li>
-          </ol>
-        </section>
-
-        <section class="skill">
-          <h3 class="h3 skills-title">Skill Set</h3>
-          		  <ul class="skills-list content-card">
-			<li class="skills-item">
-				<div class="title-wrapper">
-					<h5 class="h5">Java</h5>
-				</div>
-			</li>
-		</ul>
-		<ul class="skills-list content-card">
-			<li class="skills-item">
-				<div class="title-wrapper">
-					<h5 class="h5">Python</h5>
-				</div>
-			</li>
-		</ul>
-		<ul class="skills-list content-card">
-			<li class="skills-item">
-				<div class="title-wrapper">
-					<h5 class="h5">BASH</h5>
-				</div>
-			</li>
-		</ul>
-		<ul class="skills-list content-card">
-			<li class="skills-item">
-				<div class="title-wrapper">
-					<h5 class="h5">OOP</h5>
-				</div>
-			</li>
-		</ul>
-		<ul class="skills-list content-card">
-			<li class="skills-item">
-				<div class="title-wrapper">
-					<h5 class="h5">Git</h5>
-				</div>
-			</li>
-		</ul>
-		<ul class="skills-list content-card">
-			<li class="skills-item">
-				<div class="title-wrapper">
-					<h5 class="h5">Bitbucket</h5>
-				</div>
-			</li>
-		</ul>
-		<ul class="skills-list content-card">
-			<li class="skills-item">
-				<div class="title-wrapper">
-					<h5 class="h5">GitHub</h5>
-				</div>
-			</li>
-		</ul>
-		<ul class="skills-list content-card">
-			<li class="skills-item">
-				<div class="title-wrapper">
-					<h5 class="h5">Scripting</h5>
-				</div>
-			</li>
-		</ul>
-		<ul class="skills-list content-card">
-			<li class="skills-item">
-				<div class="title-wrapper">
-					<h5 class="h5">IntelliJ</h5>
-				</div>
-			</li>
-		</ul>
-		<ul class="skills-list content-card">
-			<li class="skills-item">
-				<div class="title-wrapper">
-					<h5 class="h5">Postman</h5>
-				</div>
-			</li>
-		</ul>
-		<ul class="skills-list content-card">
-			<li class="skills-item">
-				<div class="title-wrapper">
-					<h5 class="h5">BloomRPC</h5>
-				</div>
-			</li>
-		</ul>
-		<ul class="skills-list content-card">
-			<li class="skills-item">
-				<div class="title-wrapper">
-					<h5 class="h5">MySQL</h5>
-				</div>
-			</li>
-		</ul>
-		<ul class="skills-list content-card">
-			<li class="skills-item">
-				<div class="title-wrapper">
-					<h5 class="h5">Maven</h5>
-				</div>
-			</li>
-		</ul>
-		<ul class="skills-list content-card">
-			<li class="skills-item">
-				<div class="title-wrapper">
-					<h5 class="h5">ElasticSearch</h5>
-				</div>
-			</li>
-		</ul>
-		<ul class="skills-list content-card">
-			<li class="skills-item">
-				<div class="title-wrapper">
-					<h5 class="h5">Jenkins</h5>
-				</div>
-			</li>
-		</ul>
-		<ul class="skills-list content-card">
-			<li class="skills-item">
-				<div class="title-wrapper">
-					<h5 class="h5">CI/CD Pipeline</h5>
-				</div>
-			</li>
-		</ul>
-		<ul class="skills-list content-card">
-			<li class="skills-item">
-				<div class="title-wrapper">
-					<h5 class="h5">Rancher</h5>
-				</div>
-			</li>
-		</ul>
-		<ul class="skills-list content-card">
-			<li class="skills-item">
-				<div class="title-wrapper">
-					<h5 class="h5">API Integration</h5>
-				</div>
-			</li>
-		</ul>
-		<ul class="skills-list content-card">
-			<li class="skills-item">
-				<div class="title-wrapper">
-					<h5 class="h5">REST</h5>
-				</div>
-			</li>
-		</ul>
-		<ul class="skills-list content-card">
-			<li class="skills-item">
-				<div class="title-wrapper">
-					<h5 class="h5">gRPC</h5>
-				</div>
-			</li>
-		</ul>
-		<ul class="skills-list content-card">
-			<li class="skills-item">
-				<div class="title-wrapper">
-					<h5 class="h5">SpringBoot</h5>
-				</div>
-			</li>
-		</ul>
-		<ul class="skills-list content-card">
-			<li class="skills-item">
-				<div class="title-wrapper">
-					<h5 class="h5">Kafka</h5>
-				</div>
-			</li>
-		</ul>
-		<ul class="skills-list content-card">
-			<li class="skills-item">
-				<div class="title-wrapper">
-					<h5 class="h5">Kibana</h5>
-				</div>
-			</li>
-		</ul>
-		<ul class="skills-list content-card">
-			<li class="skills-item">
-				<div class="title-wrapper">
-					<h5 class="h5">OpenSearch</h5>
-				</div>
-			</li>
-		</ul>
-		<ul class="skills-list content-card">
-			<li class="skills-item">
-				<div class="title-wrapper">
-					<h5 class="h5">Graphana</h5>
-				</div>
-			</li>
-		</ul>
-		<ul class="skills-list content-card">
-			<li class="skills-item">
-				<div class="title-wrapper">
-					<h5 class="h5">Swagger</h5>
-				</div>
-			</li>
-		</ul>
-		<ul class="skills-list content-card">
-			<li class="skills-item">
-				<div class="title-wrapper">
-					<h5 class="h5">Flask</h5>
-				</div>
-			</li>
-		</ul>
-		<ul class="skills-list content-card">
-			<li class="skills-item">
-				<div class="title-wrapper">
-					<h5 class="h5">Firebase</h5>
-				</div>
-			</li>
-		</ul>
-		<ul class="skills-list content-card">
-			<li class="skills-item">
-				<div class="title-wrapper">
-					<h5 class="h5">AWS S3</h5>
-				</div>
-			</li>
-		</ul>
-		<ul class="skills-list content-card">
-			<li class="skills-item">
-				<div class="title-wrapper">
-					<h5 class="h5">Cloudwatch</h5>
-				</div>
-			</li>
-		</ul>
-		<ul class="skills-list content-card">
-			<li class="skills-item">
-				<div class="title-wrapper">
-					<h5 class="h5">SQL</h5>
-				</div>
-			</li>
-		</ul>
-		<ul class="skills-list content-card">
-			<li class="skills-item">
-				<div class="title-wrapper">
-					<h5 class="h5">HTML</h5>
-				</div>
-			</li>
-		</ul>
-		<ul class="skills-list content-card">
-			<li class="skills-item">
-				<div class="title-wrapper">
-					<h5 class="h5">JS</h5>
-				</div>
-			</li>
-		</ul>
-		<ul class="skills-list content-card">
-			<li class="skills-item">
-				<div class="title-wrapper">
-					<h5 class="h5">CSS</h5>
-				</div>
-			</li>
-		</ul>
-		<ul class="skills-list content-card">
-			<li class="skills-item">
-				<div class="title-wrapper">
-					<h5 class="h5">MacOS</h5>
-				</div>
-			</li>
-		</ul>
-		<ul class="skills-list content-card">
-			<li class="skills-item">
-				<div class="title-wrapper">
-					<h5 class="h5">Linux</h5>
-				</div>
-			</li>
-		</ul>
-        </section>
-
-      </article>
-
-
-      <article class="projects" data-page="projects">
-        <header>
-          <h2 class="h2 article-title">Projects</h2>
-        </header>
-        <section class="projects-section">
-          <ul class="project-list">
-			<li class="project-item">
-				<div class="content-card" data-project-item>
-				  <figure class="project-avatar-box">
-					<img src="./assets/images/whatsapp.jpg" alt="chAt" width="60" data-project-avatar>
-				  </figure>
-				  <h4 class="h4 project-item-title" data-project-title>chAt</h4>
-				  <div class="project-text" data-project-text>
-					<p>
-						Designed a whatsapp-like chat application to send messages over to friends. It uses Google Firebase 
-						database to store user info and messages. It features mobile number, password and OTP verification 
-						for signIn/signUp. With the option to add new and select different friends, all the chat-messages of 
-						a session are displayed inside bubbles.
-					</p>
-				  </div>
-				  <div class="project-links">
-					<div data-project-link>
-						https://url-shorty.anvil.app/#chat-lk
-					</div>
-					<div data-project-demo>
-						https://url-shorty.anvil.app/#chat-dm
-					</div>
-					<div data-project-github>
-						https://url-shorty.anvil.app/#chat-gh
-					</div>
-				  </div>
-				</div>
-			  </li>
-
-			  <li class="project-item">
-				<div class="content-card" data-project-item>
-				  <figure class="project-avatar-box">
-					<img src="./assets/images/urlshorty.jpg" alt="URL-Shorty" width="60" data-project-avatar>
-				  </figure>
-				  <h4 class="h4 project-item-title" data-project-title>URL-Shorty</h4>
-				  <div class="project-text" data-project-text>
-					<p>
-						Implemented a url shortener application to shorten urls. It uses Anvil framework over python and an 
-						inbuilt database to store url data. It currently provides user with an option for custom code 
-						for the url. More features - such as expiration and QR code display - to be added soon.
-					</p>
-				  </div>
-				  <div class="project-links">
-					<div data-project-link>
-						https://url-shorty.anvil.app/
-					</div>
-					<div data-project-demo>
-						https://url-shorty.anvil.app/#urls-dm
-					</div>
-					<div data-project-github>
-						https://url-shorty.anvil.app/
-					</div>
-				  </div>
-				</div>
-			  </li>
-
-			  <li class="project-item">
-				<div class="content-card" data-project-item>
-				  <figure class="project-avatar-box">
-					<img src="./assets/images/sudoku.jpg" alt="Sudoku" width="60" data-project-avatar>
-				  </figure>
-				  <h4 class="h4 project-item-title" data-project-title>Sudoku</h4>
-				  <div class="project-text" data-project-text>
-					<p>
-						Created a static web-page of the implentation of the world famous brain excercise game - SUDOKU. 
-						It is capable of generating over 4×10<sup>16</sup> unique puzzles. It can display if the user has 
-						entered an incorrect number in a cell. It also allows the user to undo the fill-ups. 
-						Finally a sudoku-solving feature, whose logic is based on back-tracking, has also been added 
-						to complete the puzzle.
-					</p>
-				  </div>
-				  <div class="project-links">
-					<div data-project-link>
-						https://url-shorty.anvil.app/#sudoku-lk
-					</div>
-					<div data-project-demo>
-						https://url-shorty.anvil.app/#sudoku-dm
-					</div>
-					<div data-project-github>
-						https://url-shorty.anvil.app/#sudoku-gh
-					</div>
-				  </div>
-				</div>
-			  </li>
-
-			  <li class="project-item">
-				<div class="content-card" data-project-item>
-				  <figure class="project-avatar-box">
-					<img src="./assets/images/gas.jpg" alt="Renamer" width="60" data-project-avatar>
-				  </figure>
-				  <h4 class="h4 project-item-title" data-project-title>Renamer</h4>
-				  <div class="project-text" data-project-text>
-					<p>
-						Scripted an application using Google App Script and Google Sheets, which can rename all files 
-						in a GDrive folder according to certain rules thereby removing the hassle to rename each file 
-						one by one. Replacing a string with another, inserting a string at a given index, renaming 
-						each file with a random GUID, etc. are some of the rules.
-					</p>
-				  </div>
-				  <div class="project-links">
-					<div data-project-link>
-						https://url-shorty.anvil.app/#renamer-lk
-					</div>
-					<div data-project-demo>
-						https://url-shorty.anvil.app/#renamer-dm
-					</div>
-					<div data-project-github>
-						https://url-shorty.anvil.app/#renamer-gh
-					</div>
-				  </div>
-				</div>
-			  </li>
-
-			  <li class="project-item">
-				<div class="content-card" data-project-item>
-				  <figure class="project-avatar-box">
-					<img src="./assets/images/git.jpg" alt="Git Fetcher" width="60" data-project-avatar>
-				  </figure>
-				  <h4 class="h4 project-item-title" data-project-title>Git Fetcher</h4>
-				  <div class="project-text" data-project-text>
-					<p>
-						After working on multiple repositories, it became a hassle to fetch each repository one after another. 
-						Here is a BASH script which automatically applies 'git fetch' to all repositories present in a 
-						single folder. It can also update a non-checked-out branch (such as master or release). The major 
-						highlight is that it applies a command to all repositories in parallel, thus reducing the execution 
-						time of the script significantly.
-					</p>
-				  </div>
-				  <div class="project-links">
-					<div data-project-link>
-						https://url-shorty.anvil.app/#gitfetch-lk
-					</div>
-					<div data-project-demo>
-						https://url-shorty.anvil.app/#gitfetch-dm
-					</div>
-					<div data-project-github>
-						https://url-shorty.anvil.app/#gitfetch-gh
-					</div>
-				  </div>
-				</div>
-			  </li>
-
-			  <li class="project-item">
-				<div class="content-card" data-project-item>
-				  <figure class="project-avatar-box">
-					<img src="./assets/images/enigma.jpg" alt="Enigma" width="60" data-project-avatar>
-				  </figure>
-				  <h4 class="h4 project-item-title" data-project-title>Enigma</h4>
-				  <div class="project-text" data-project-text>
-					<p>
-						Scripted a logic to encrypt and decrypt a secret text based on a password key. The idea originated 
-						from the movie 'The Imitation Game' to have a secret code/logic to send and receive messages cryptically. 
-						The logic is adept in handling 300+ keyboard typable characters, both in message and key.
-					</p>
-				  </div>
-				  <div class="project-links">
-					<div data-project-link>
-						https://url-shorty.anvil.app/#enigma-lk
-					</div>
-					<div data-project-demo>
-						https://url-shorty.anvil.app/#enigma-dm
-					</div>
-					<div data-project-github>
-						https://url-shorty.anvil.app/#enigma-gh
-					</div>
-				  </div>
-				</div>
-			  </li>
-		  <div class="modal-container" data-modal-container>
-			<div class="overlay" data-overlay></div>
-			<section class="project-modal">
-			  <button class="modal-close-btn" data-modal-close-btn>
-				<ion-icon name="close-outline"></ion-icon>
-			  </button>
-			  <div class="modal-img-wrapper">
-				<figure class="modal-avatar-box">
-				  <img src="./assets/images/icon.ico" alt="Diablo73" width="80" data-modal-img>
+	<main>
+		<aside class="sidebar" data-sidebar>
+			<div class="sidebar-info">
+				<figure class="avatar-box">
+					<img src="./assets/images/icon.ico" alt="Ashul Gupta" width="80">
 				</figure>
-			  </div>
-			  <div class="modal-content">
-				<h4 class="h3 modal-title" data-modal-title>Diablo73</h4>
-				<div data-modal-text>
-				  <p>
-				  </p>
+				<div class="info-content">
+					<h1 class="name" title="Ashul Gupta">Ashul Gupta</h1>
+					<p class="title">Senior Software Developer</p>
 				</div>
-			  <div class="modal-content-links">
-				<a href="#" class="social-link" target="_blank" data-modal-link>
-					<ion-icon name="link-outline"></ion-icon>
-				</a>
-				<a href="#" class="social-link" target="_blank" data-modal-demo>
-					<img src="./assets/images/demo.jpg" alt="Demo URL" loading="lazy">
-				</a>
-				<a href="#" class="social-link" target="_blank" data-modal-github>
-					<ion-icon name="logo-github"></ion-icon>
-				</a>
-			  </div>
-			  </div>
-			</section>
-		  </div>
 
-        </section>
-      </article>
+				<button class="info_more-btn" data-sidebar-btn>
+					<span>Show Contacts</span>
+					<ion-icon name="chevron-down"></ion-icon>
+				</button>
+			</div>
 
-      <article class="contact" data-page="contact">
-        <header>
-          <h2 class="h2 article-title">Contact</h2>
-        </header>
-        <section class="mapbox" data-mapbox>
-          <figure>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d110335.77919756557!2d74.87628519496766!3d30.208744384899607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39173297173abbcd%3A0xa00033c0a58a5ac8!2sBathinda%2C%20Punjab!5e0!3m2!1sen!2sin!4v1686513002278!5m2!1sen!2sin"
-              width="400" height="300" loading="lazy"></iframe>
-          </figure>
-        </section>
+			<div class="sidebar-info_more">
+				<div class="separator"></div>
+				<ul class="contacts-list">
 
-		<section>
-			<script src="https://anvil.works/embed.js" async></script>
-			<iframe style="width:100%; height: 100%;" data-anvil-embed src="https://contact-me.anvil.app/"></iframe>
-		</section>
+					<li class="contact-item">
+						<div class="icon-box">
+							<ion-icon name="mail-outline"></ion-icon>
+						</div>
+						<div class="contact-info">
+							<p class="contact-title">Email</p>
+							<a href="mailto:ashul2173@gmail.com" class="contact-link">ashul2173@gmail.com</a>
+						</div>
+					</li>
 
-      </article>
+					<li class="contact-item">
+						<div class="icon-box">
+							<ion-icon name="phone-portrait-outline"></ion-icon>
+						</div>
+						<div class="contact-info">
+							<p class="contact-title">Phone</p>
+							<a href="tel:+919417444459" class="contact-link">+91-94174-44459</a>
+						</div>
+					</li>
 
-    </div>
+					<li class="contact-item">
+						<div class="icon-box">
+							<ion-icon name="location-outline"></ion-icon>
+						</div>
+						<div class="contact-info">
+							<p class="contact-title">Location</p>
+							<address>Bathinda, Punjab, India</address>
+						</div>
+					</li>
+				</ul>
 
-  </main>
+				<div class="separator"></div>
+			</div>
+		</aside>
 
-  <script src="./assets/js/script.js"></script>
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
+		<div class="main-content">
+			<nav class="navbar">
+				<ul class="navbar-list">
+					<li class="navbar-item">
+						<button class="navbar-link active" data-nav-link>About</button>
+					</li>
+					<li class="navbar-item">
+						<button class="navbar-link" data-nav-link>Experience</button>
+					</li>
+					<li class="navbar-item">
+						<button class="navbar-link" data-nav-link>Projects</button>
+					</li>
+					<li class="navbar-item">
+						<button class="navbar-link" data-nav-link>Contact</button>
+					</li>
+				</ul>
+			</nav>
+
+			<article class="about active" data-page="about">
+				<header>
+					<h2 class="h2 article-title">About me</h2>
+				</header>
+
+				<section class="about-text">
+					<p>
+						I am Ashul Gupta, a passionate tech savvy who loves the conjunction of art, code and logic.
+						I work as a senior software developer to make automated, fun little apps and scripts as a hobby 
+						and to make a living.
+					</p>
+					<p>
+						My job is to build, modify and optimize backend applications so as to not only improve customer experience 
+						but also improve the processing speed at the same time. Moreover, I am adept in creating scripts 
+						for automation which might handy during the maintenance of the application. In this fast-paced industry, 
+						I am always excited to learn new skills and software.
+					</p>
+				</section>
+
+				<section class="service">
+					<h3 class="h3 service-title">Education</h3>
+					<ul class="service-list">
+						<li class="service-item">
+							<div class="service-icon-box">
+								<img src="./assets/images/bits.jpg " alt="design icon" width="240">
+							</div>
+
+							<div class="service-content-box">
+								<h4 class="h4 service-item-title">Birla Institute of Technology & Science, Pilani</h4>
+								<p class="service-item-text">
+									Electrical and Electronics Engineering (B.E. Hons.) (2017-2021)
+								</p>
+								<p class="service-item-text">
+									Relevant courses - Object Oriented Programming, Probability and Statistics, 
+									Operating Systems, Data Structures and Algorithms
+								</p>
+							</div>
+						</li>
+					</ul>
+				</section>
+			</article>
+
+			<article class="experience" data-page="experience">
+				<header>
+					<h2 class="h2 article-title">Experience</h2>
+				</header>
+
+				<section class="timeline">
+					<div class="title-wrapper">
+						<div class="icon-box">
+							<ion-icon name="laptop-outline"></ion-icon>
+						</div>
+						<h3 class="h3">One97 Communications Pvt. Ltd</h3>
+					</div>
+
+					<ol class="timeline-list">
+						<li class="timeline-item">
+							<h4 class="h4 timeline-item-title">Senior Software Engineer</h4>
+							<span>04/2023 - Present</span>
+							<p class="timeline-text">
+								○	&emsp;	Reduced expenses by compressing the kibana log size by about 15% 
+								(2TB over 6 applications)
+								<br>
+								○	&emsp;	Optimised the applications by logically removing redundant SQL queries
+								<br>
+								○	&emsp;	Modified the applications to be able to deploy the same codebase 
+								over separate production infra
+								<br>
+								○	&emsp;	Uniformized the sharding logic for every read/write SQL query
+							</p>
+						</li>
+
+						<li class="timeline-item">
+							<h4 class="h4 timeline-item-title">Software Engineer</h4>
+							<span>06/2021 - 03/2023</span>
+							<p class="timeline-text">
+								○	&emsp;	Spearheaded the delivery of an ambitious feature within 3 months 
+								with a small team of 10 people
+								<br>
+								○	&emsp;	Developed the feature to allow merchants to customise their payout times
+								<br>
+								○	&emsp;	Integrated Virtual Table with the application to make it capable 
+								to change critical variables in real-time without any downtime or redeployment
+								<br>
+								○	&emsp;	Engineered a system for storing transactions, generating bills 
+								and payouts for merchants with T+n settlement cycle auto scalable to 3000 TPS
+								<br>
+								○	&emsp;	Represented the team on a multi-team fundloss project to validate data integrity 
+								between multiple teams' databases
+								<br>
+								○	&emsp;	Resolved production issues by using Google Sheets and creating python scripts 
+								to generate over 20000 DTOs
+								<br>
+								○	&emsp;	Mentored interns to integrate with the team and its culture and coordinated with them 
+								with their daily tasks
+							</p>
+						</li>
+
+						<li class="timeline-item">
+							<h4 class="h4 timeline-item-title">Software Engineer Intern</h4>
+							<span>01/2021 - 06/2021</span>
+							<p class="timeline-text">
+								○	&emsp;	Migrated 8 APIs as part of application server migration from Alipay server to AWS
+								<br>
+								○	&emsp;	Enhanced the application to manage transactions, settlements, summaries, etc. 
+								of merchants in real time
+								<br>
+								○	&emsp;	Integrated the application to an Elasticsearch server to provide complete data 
+								to merchants handling 60000 RPS
+							</p>
+						</li>
+					</ol>
+				</section>
+
+				<section class="skill">
+					<h3 class="h3 skills-title">Skill Set</h3>
+					<ul class="skills-list content-card">
+						<li class="skills-item">
+							<div class="title-wrapper">
+								<h5 class="h5">Java</h5>
+							</div>
+						</li>
+					</ul>
+					<ul class="skills-list content-card">
+						<li class="skills-item">
+							<div class="title-wrapper">
+								<h5 class="h5">Python</h5>
+							</div>
+						</li>
+					</ul>
+					<ul class="skills-list content-card">
+						<li class="skills-item">
+							<div class="title-wrapper">
+								<h5 class="h5">BASH</h5>
+							</div>
+						</li>
+					</ul>
+					<ul class="skills-list content-card">
+						<li class="skills-item">
+							<div class="title-wrapper">
+								<h5 class="h5">OOP</h5>
+							</div>
+						</li>
+					</ul>
+					<ul class="skills-list content-card">
+						<li class="skills-item">
+							<div class="title-wrapper">
+								<h5 class="h5">Git</h5>
+							</div>
+						</li>
+					</ul>
+					<ul class="skills-list content-card">
+						<li class="skills-item">
+							<div class="title-wrapper">
+								<h5 class="h5">Bitbucket</h5>
+							</div>
+						</li>
+					</ul>
+					<ul class="skills-list content-card">
+						<li class="skills-item">
+							<div class="title-wrapper">
+								<h5 class="h5">GitHub</h5>
+							</div>
+						</li>
+					</ul>
+					<ul class="skills-list content-card">
+						<li class="skills-item">
+							<div class="title-wrapper">
+								<h5 class="h5">Scripting</h5>
+							</div>
+						</li>
+					</ul>
+					<ul class="skills-list content-card">
+						<li class="skills-item">
+							<div class="title-wrapper">
+								<h5 class="h5">IntelliJ</h5>
+							</div>
+						</li>
+					</ul>
+					<ul class="skills-list content-card">
+						<li class="skills-item">
+							<div class="title-wrapper">
+								<h5 class="h5">Postman</h5>
+							</div>
+						</li>
+					</ul>
+					<ul class="skills-list content-card">
+						<li class="skills-item">
+							<div class="title-wrapper">
+								<h5 class="h5">BloomRPC</h5>
+							</div>
+						</li>
+					</ul>
+					<ul class="skills-list content-card">
+						<li class="skills-item">
+							<div class="title-wrapper">
+								<h5 class="h5">MySQL</h5>
+							</div>
+						</li>
+					</ul>
+					<ul class="skills-list content-card">
+						<li class="skills-item">
+							<div class="title-wrapper">
+								<h5 class="h5">Maven</h5>
+							</div>
+						</li>
+					</ul>
+					<ul class="skills-list content-card">
+						<li class="skills-item">
+							<div class="title-wrapper">
+								<h5 class="h5">ElasticSearch</h5>
+							</div>
+						</li>
+					</ul>
+					<ul class="skills-list content-card">
+						<li class="skills-item">
+							<div class="title-wrapper">
+								<h5 class="h5">Jenkins</h5>
+							</div>
+						</li>
+					</ul>
+					<ul class="skills-list content-card">
+						<li class="skills-item">
+							<div class="title-wrapper">
+								<h5 class="h5">CI/CD Pipeline</h5>
+							</div>
+						</li>
+					</ul>
+					<ul class="skills-list content-card">
+						<li class="skills-item">
+							<div class="title-wrapper">
+								<h5 class="h5">Rancher</h5>
+							</div>
+						</li>
+					</ul>
+					<ul class="skills-list content-card">
+						<li class="skills-item">
+							<div class="title-wrapper">
+								<h5 class="h5">API Integration</h5>
+							</div>
+						</li>
+					</ul>
+					<ul class="skills-list content-card">
+						<li class="skills-item">
+							<div class="title-wrapper">
+								<h5 class="h5">REST</h5>
+							</div>
+						</li>
+					</ul>
+					<ul class="skills-list content-card">
+						<li class="skills-item">
+							<div class="title-wrapper">
+								<h5 class="h5">gRPC</h5>
+							</div>
+						</li>
+					</ul>
+					<ul class="skills-list content-card">
+						<li class="skills-item">
+							<div class="title-wrapper">
+								<h5 class="h5">SpringBoot</h5>
+							</div>
+						</li>
+					</ul>
+					<ul class="skills-list content-card">
+						<li class="skills-item">
+							<div class="title-wrapper">
+								<h5 class="h5">Kafka</h5>
+							</div>
+						</li>
+					</ul>
+					<ul class="skills-list content-card">
+						<li class="skills-item">
+							<div class="title-wrapper">
+								<h5 class="h5">Kibana</h5>
+							</div>
+						</li>
+					</ul>
+					<ul class="skills-list content-card">
+						<li class="skills-item">
+							<div class="title-wrapper">
+								<h5 class="h5">OpenSearch</h5>
+							</div>
+						</li>
+					</ul>
+					<ul class="skills-list content-card">
+						<li class="skills-item">
+							<div class="title-wrapper">
+								<h5 class="h5">Graphana</h5>
+							</div>
+						</li>
+					</ul>
+					<ul class="skills-list content-card">
+						<li class="skills-item">
+							<div class="title-wrapper">
+								<h5 class="h5">Swagger</h5>
+							</div>
+						</li>
+					</ul>
+					<ul class="skills-list content-card">
+						<li class="skills-item">
+							<div class="title-wrapper">
+								<h5 class="h5">Flask</h5>
+							</div>
+						</li>
+					</ul>
+					<ul class="skills-list content-card">
+						<li class="skills-item">
+							<div class="title-wrapper">
+								<h5 class="h5">Firebase</h5>
+							</div>
+						</li>
+					</ul>
+					<ul class="skills-list content-card">
+						<li class="skills-item">
+							<div class="title-wrapper">
+								<h5 class="h5">AWS S3</h5>
+							</div>
+						</li>
+					</ul>
+					<ul class="skills-list content-card">
+						<li class="skills-item">
+							<div class="title-wrapper">
+								<h5 class="h5">Cloudwatch</h5>
+							</div>
+						</li>
+					</ul>
+					<ul class="skills-list content-card">
+						<li class="skills-item">
+							<div class="title-wrapper">
+								<h5 class="h5">SQL</h5>
+							</div>
+						</li>
+					</ul>
+					<ul class="skills-list content-card">
+						<li class="skills-item">
+							<div class="title-wrapper">
+								<h5 class="h5">HTML</h5>
+							</div>
+						</li>
+					</ul>
+					<ul class="skills-list content-card">
+						<li class="skills-item">
+							<div class="title-wrapper">
+								<h5 class="h5">JS</h5>
+							</div>
+						</li>
+					</ul>
+					<ul class="skills-list content-card">
+						<li class="skills-item">
+							<div class="title-wrapper">
+								<h5 class="h5">CSS</h5>
+							</div>
+						</li>
+					</ul>
+					<ul class="skills-list content-card">
+						<li class="skills-item">
+							<div class="title-wrapper">
+								<h5 class="h5">MacOS</h5>
+							</div>
+						</li>
+					</ul>
+					<ul class="skills-list content-card">
+						<li class="skills-item">
+							<div class="title-wrapper">
+								<h5 class="h5">Linux</h5>
+							</div>
+						</li>
+					</ul>
+				</section>
+			</article>
+
+			<article class="projects" data-page="projects">
+				<header>
+					<h2 class="h2 article-title">Projects</h2>
+				</header>
+				<section class="projects-section">
+					<ul class="project-list">
+						<li class="project-item">
+							<div class="content-card" data-project-item>
+								<figure class="project-avatar-box">
+									<img src="./assets/images/whatsapp.jpg" alt="chAt" width="60" data-project-avatar>
+								</figure>
+								<h4 class="h4 project-item-title" data-project-title>chAt</h4>
+								<div class="project-text" data-project-text>
+									<p>
+										Designed a whatsapp-like chat application to send messages over to friends. 
+										It uses Google Firebase database to store user info and messages. 
+										It features mobile number, password and OTP verification for signIn/signUp. 
+										With the option to add new and select different friends, all the chat-messages 
+										of a session are displayed inside bubbles.
+									</p>
+								</div>
+								<div class="project-links">
+									<div data-project-link>
+										https://url-shorty.anvil.app/#chat-lk
+									</div>
+									<div data-project-demo>
+										https://url-shorty.anvil.app/#chat-dm
+									</div>
+									<div data-project-github>
+										https://url-shorty.anvil.app/#chat-gh
+									</div>
+								</div>
+							</div>
+						</li>
+
+						<li class="project-item">
+							<div class="content-card" data-project-item>
+								<figure class="project-avatar-box">
+									<img src="./assets/images/urlshorty.jpg" alt="URL-Shorty" width="60" data-project-avatar>
+								</figure>
+								<h4 class="h4 project-item-title" data-project-title>URL-Shorty</h4>
+								<div class="project-text" data-project-text>
+									<p>
+										Implemented a url shortener application to shorten urls. It uses Anvil framework over python 
+										and an inbuilt database to store url data. It currently provides user with an option 
+										for custom code for the url. More features - such as expiration and QR code display - 
+										to be added soon.
+									</p>
+								</div>
+								<div class="project-links">
+									<div data-project-link>
+										https://url-shorty.anvil.app/
+									</div>
+									<div data-project-demo>
+										https://url-shorty.anvil.app/#urls-dm
+									</div>
+									<div data-project-github>
+										https://url-shorty.anvil.app/
+									</div>
+								</div>
+							</div>
+						</li>
+
+						<li class="project-item">
+							<div class="content-card" data-project-item>
+								<figure class="project-avatar-box">
+									<img src="./assets/images/sudoku.jpg" alt="Sudoku" width="60" data-project-avatar>
+								</figure>
+								<h4 class="h4 project-item-title" data-project-title>Sudoku</h4>
+								<div class="project-text" data-project-text>
+									<p>
+										Created a static web-page of the implentation of the world famous brain excercise game - SUDOKU. 
+										It is capable of generating over 4×10<sup>16</sup> unique puzzles. It can display if the user has 
+										entered an incorrect number in a cell. It also allows the user to undo the fill-ups. 
+										Finally a sudoku-solving feature, whose logic is based on back-tracking, has also been added 
+										to complete the puzzle.
+									</p>
+								</div>
+								<div class="project-links">
+									<div data-project-link>
+										https://url-shorty.anvil.app/#sudoku-lk
+									</div>
+									<div data-project-demo>
+										https://url-shorty.anvil.app/#sudoku-dm
+									</div>
+									<div data-project-github>
+										https://url-shorty.anvil.app/#sudoku-gh
+									</div>
+								</div>
+							</div>
+						</li>
+
+						<li class="project-item">
+							<div class="content-card" data-project-item>
+								<figure class="project-avatar-box">
+									<img src="./assets/images/gas.jpg" alt="Renamer" width="60" data-project-avatar>
+								</figure>
+								<h4 class="h4 project-item-title" data-project-title>Renamer</h4>
+								<div class="project-text" data-project-text>
+									<p>
+										Scripted an application using Google App Script and Google Sheets, 
+										which can rename all files in a GDrive folder according to certain rules 
+										thereby removing the hassle to rename each file one by one. 
+										Replacing a string with another, inserting a string at a given index, renaming 
+										each file with a random GUID, etc. are some of the rules.
+									</p>
+								</div>
+								<div class="project-links">
+									<div data-project-link>
+										https://url-shorty.anvil.app/#renamer-lk
+									</div>
+									<div data-project-demo>
+										https://url-shorty.anvil.app/#renamer-dm
+									</div>
+									<div data-project-github>
+										https://url-shorty.anvil.app/#renamer-gh
+									</div>
+								</div>
+							</div>
+						</li>
+
+						<li class="project-item">
+							<div class="content-card" data-project-item>
+								<figure class="project-avatar-box">
+									<img src="./assets/images/git.jpg" alt="Git Fetcher" width="60" data-project-avatar>
+								</figure>
+								<h4 class="h4 project-item-title" data-project-title>Git Fetcher</h4>
+								<div class="project-text" data-project-text>
+									<p>
+										After working on multiple repositories, it became a hassle to fetch each repository 
+										one after another. Here is a BASH script which automatically applies 'git fetch' 
+										to all repositories present in a single folder. It can also update a non-checked-out branch 
+										(such as master or release). The major highlight is that it applies a command 
+										to all repositories in parallel, thus reducing the execution time 
+										of the script significantly.
+									</p>
+								</div>
+								<div class="project-links">
+									<div data-project-link>
+										https://url-shorty.anvil.app/#gitfetch-lk
+									</div>
+									<div data-project-demo>
+										https://url-shorty.anvil.app/#gitfetch-dm
+									</div>
+									<div data-project-github>
+										https://url-shorty.anvil.app/#gitfetch-gh
+									</div>
+								</div>
+							</div>
+						</li>
+
+						<li class="project-item">
+							<div class="content-card" data-project-item>
+								<figure class="project-avatar-box">
+									<img src="./assets/images/enigma.jpg" alt="Enigma" width="60" data-project-avatar>
+								</figure>
+								<h4 class="h4 project-item-title" data-project-title>Enigma</h4>
+								<div class="project-text" data-project-text>
+									<p>
+										Scripted a logic to encrypt and decrypt a secret text based on a password key. 
+										The idea originated from the movie 'The Imitation Game' to have a secret code/logic 
+										to send and receive messages cryptically. The logic is adept in handling 
+										300+ keyboard typable characters, both in message and key.
+									</p>
+								</div>
+								<div class="project-links">
+									<div data-project-link>
+										https://url-shorty.anvil.app/#enigma-lk
+									</div>
+									<div data-project-demo>
+										https://url-shorty.anvil.app/#enigma-dm
+									</div>
+									<div data-project-github>
+										https://url-shorty.anvil.app/#enigma-gh
+									</div>
+								</div>
+							</div>
+						</li>
+
+						<div class="modal-container" data-modal-container>
+							<div class="overlay" data-overlay></div>
+							<section class="project-modal">
+								<button class="modal-close-btn" data-modal-close-btn>
+									<ion-icon name="close-outline"></ion-icon>
+								</button>
+								<div class="modal-img-wrapper">
+									<figure class="modal-avatar-box">
+										<img src="./assets/images/icon.ico" alt="Diablo73" width="80" data-modal-img>
+									</figure>
+								</div>
+								<div class="modal-content">
+									<h4 class="h3 modal-title" data-modal-title>Diablo73</h4>
+									<div data-modal-text>
+										<p>
+										</p>
+									</div>
+									<div class="modal-content-links">
+										<a href="#" class="social-link" target="_blank" data-modal-link>
+											<ion-icon name="link-outline"></ion-icon>
+										</a>
+										<a href="#" class="social-link" target="_blank" data-modal-demo>
+											<img src="./assets/images/demo.jpg" alt="Demo URL" loading="lazy">
+										</a>
+										<a href="#" class="social-link" target="_blank" data-modal-github>
+											<ion-icon name="logo-github"></ion-icon>
+										</a>
+									</div>
+								</div>
+							</section>
+						</div>
+					</ul>
+				</section>
+			</article>
+
+			<article class="contact" data-page="contact">
+				<header>
+					<h2 class="h2 article-title">Contact</h2>
+				</header>
+				<section class="mapbox" data-mapbox>
+					<figure>
+						<iframe
+							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d110335.77919756557!2d74.87628519496766!3d30.208744384899607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39173297173abbcd%3A0xa00033c0a58a5ac8!2sBathinda%2C%20Punjab!5e0!3m2!1sen!2sin!4v1686513002278!5m2!1sen!2sin"
+							width="400" height="300" loading="lazy"></iframe>
+					</figure>
+				</section>
+
+				<section>
+					<script src="https://anvil.works/embed.js" async></script>
+					<iframe style="width:100%; height: 100%;" data-anvil-embed src="https://contact-me.anvil.app/"></iframe>
+				</section>
+			</article>
+		</div>
+	</main>
+
+	<script src="./assets/js/script.js"></script>
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
