@@ -1,5 +1,3 @@
-'use strict';
-
 // element toggle function
 const elementToggleFunc = function (elem) { elem.classList.toggle("active"); }
 
@@ -94,5 +92,54 @@ for (let i = 0; i < navigationLinks.length; i++) {
       }
     }
 
+  });
+}
+
+
+const portfolioURL = "https://script.google.com/macros/s/AKfycbzCl71fTSQaektFjyKEGiwM6GSsuEzpGJUUf2UOGiC_jO4KFX194SzD-ukrmP87Hs-Ehg/exec";
+
+
+async function fetchPortfolioData() {
+  try {
+    const response = await fetch(portfolioURL);
+    const data = await response.json();
+    console.log(data);
+    return data;
+  } catch (err) {
+    console.log('Fetch Error :-S', err);
+    throw err;
+  }
+}
+
+fetchPortfolioData()
+  .then(data => {
+    const skillSet = data.skillSet;
+    setSkillSet(skillSet);
+  })
+  .catch(err => {
+    console.log('Error:', err);
+  });
+
+
+function setSkillSet(skillSet) {
+  skillSet.forEach(skill => {
+    const ul = document.createElement("ul");
+    ul.className = "skills-list content-card";
+    
+    const li = document.createElement("li");
+    li.className = "skills-item";
+    
+    const div = document.createElement("div");
+    div.className = "title-wrapper";
+    
+    const h5 = document.createElement("h5");
+    h5.className = "h5";
+    h5.textContent = skill;
+    
+    div.appendChild(h5);
+    li.appendChild(div);
+    ul.appendChild(li);
+    
+    document.querySelector(".skill").appendChild(ul);
   });
 }
