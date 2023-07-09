@@ -106,20 +106,29 @@ async function fetchPortfolioData() {
     console.log(data);
     return data;
   } catch (err) {
-    console.log('Fetch Error :-S', err);
+    console.log("Fetch Error : ", err);
     throw err;
   }
 }
 
 fetchPortfolioData()
   .then(data => {
-    const skillSet = data.skillSet;
-    setSkillSet(skillSet);
+    setAboutMe(data.aboutMe);
+    setSkillSet(data.skillSet);
   })
   .catch(err => {
-    console.log('Error:', err);
+    console.log("Error : ", err);
   });
 
+
+function setAboutMe(aboutMe) {
+  aboutMe.forEach(para => {
+    const p = document.createElement("p");
+    p.textContent = para;
+
+    document.querySelector(".about-text").appendChild(p);
+  });
+}
 
 function setSkillSet(skillSet) {
   skillSet.forEach(skill => {
