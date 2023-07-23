@@ -96,6 +96,13 @@ for (let i = 0; i < navigationLinks.length; i++) {
 }
 
 
+
+
+
+
+
+
+
 const portfolioURL = "https://script.google.com/macros/s/AKfycbzCl71fTSQaektFjyKEGiwM6GSsuEzpGJUUf2UOGiC_jO4KFX194SzD-ukrmP87Hs-Ehg/exec";
 
 
@@ -124,7 +131,7 @@ fetchPortfolioData()
 function setAboutMe(aboutMe) {
   aboutMe.forEach(para => {
     const p = document.createElement("p");
-    p.textContent = para;
+    p.innerHTML = para;
 
     document.querySelector(".about-text").appendChild(p);
   });

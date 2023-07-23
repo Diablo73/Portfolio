@@ -160,6 +160,11 @@ article {
   --ionicon-stroke-width: 35px;
 }
 
+
+.links {
+  color: var(--orange-yellow-crayola);
+}
+
 .project-links {
   display: none;
 }
