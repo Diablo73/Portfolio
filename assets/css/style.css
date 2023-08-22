@@ -1308,7 +1308,7 @@ textarea.form-input::-webkit-resizer { display: none; }
     justify-content: flex-start;
     align-items: stretch;
     gap: 25px;
-    padding: 30px;
+    padding: 15px;
     border-radius: 20px;
   }
 
