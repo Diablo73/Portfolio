@@ -103,7 +103,7 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
 
 
-const portfolioURL = "https://script.google.com/macros/s/AKfycbzCl71fTSQaektFjyKEGiwM6GSsuEzpGJUUf2UOGiC_jO4KFX194SzD-ukrmP87Hs-Ehg/exec";
+const portfolioURL = "https://script.google.com/macros/s/AKfycbzafPuWmelD7cjm4_2Je8QbSDtcTByijl9jntyI-7_D2JB67QLzibg5KD5SVBDVARaZ/exec";
 
 
 async function fetchPortfolioData() {
