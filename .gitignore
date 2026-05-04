@@ -24,9 +24,10 @@ lerna-debug.log*
 .tmp
 
 masterPortfolio-master/
+awesome-portfolio-websites-master/
 
 # dependencies
-/node_modules
+node_modules/
 /.pnp
 .pnp.js
 

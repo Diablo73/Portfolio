@@ -1,25 +1,24 @@
 import logo from '../resources/logo.svg';
 import '../css/App.css';
+import { useState, useEffect } from "react";
+import Splash from '../pages/splash/Splash.js';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	const [isSplashScreen, setIsSplashScreen] = useState(true);
+
+	useEffect(() => {
+		const timer = setTimeout(() => {
+			setIsSplashScreen(false);
+		}, 3000); // 3 seconds delay
+
+		return () => clearTimeout(timer);
+	}, []);
+
+	return (
+		<div className="App">
+			{isSplashScreen ? <Splash /> : <Splash />}
+		</div>
+	);
 }
 
 export default App;
