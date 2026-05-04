@@ -3,9 +3,9 @@ import './Splash.css';
 import '../../css/fonts.css';
 import Signature from './Signature.tsx';
 
-function Splash() {
+function Splash({ isFading }) {
 	return (
-		<div className="splash-container">
+		<div className={`splash-container ${isFading ? "disappear" : ""}`}>
 			<Signature />
 			<div className="atom">
 				<div className="electron"></div>
