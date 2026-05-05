@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import '../css/App.css';
 import Home from '../pages/home/Home.js';
 import Splash from '../pages/splash/Splash.js';
+import CustomCursor from '../components/CustomCursor.js';
 
 function App() {
 	const [isSplashScreen, setIsSplashScreen] = useState(true);
@@ -24,6 +25,7 @@ function App() {
 
 	return (
 		<div className="App">
+			<CustomCursor />
 			{isSplashScreen ? <Splash isFading={isFading} /> : <Home />}
 		</div>
 	);
