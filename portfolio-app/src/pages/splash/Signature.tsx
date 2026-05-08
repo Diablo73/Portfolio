@@ -33,7 +33,7 @@ export default function Signature() {
 				console.log("fontFamily : " + fontFamily);
 				setIsReady(true);
 			} catch (error) {
-				console.log("error : " + error);
+				console.log("ERROR : " + error);
 				setFontFamily('cursive');
 				setIsReady(true);
 			}

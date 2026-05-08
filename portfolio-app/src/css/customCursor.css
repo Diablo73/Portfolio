@@ -1,0 +1,138 @@
+body, * {
+	cursor: none !important;
+}
+
+#custom-cursor {
+	pointer-events: none;
+	z-index: 9999999;
+}
+
+/* ----------------------------------------- */
+/* CROSSHAIR POINTER                         */
+/* ----------------------------------------- */
+
+.crosshair-wrapper {
+	position: fixed;
+	top: -100px;
+	left: -100px;
+	width: 32px;
+	height: 32px;
+	pointer-events: none;
+	z-index: 9999999;
+	transform: translate(-50%, -50%);
+}
+
+.crosshair-wrapper svg {
+	width: 100%;
+	height: 100%;
+	transform-origin: center;
+}
+
+#custom-cursor .crosshair-center,
+#custom-cursor .crosshair-center-base,
+#custom-cursor .crosshair-top {
+	transition: all 0.15s ease-out; /* Fast, synced transition for click */
+}
+
+/* Base Default States (State B: Outer hollow ring) */
+#custom-cursor .crosshair-center-base {
+	r: 15px;
+	fill: none;
+}
+
+#custom-cursor .crosshair-center {
+	r: 15px;
+	fill: transparent;
+	stroke-width: 2px;
+	stroke: #00ff00;
+}
+
+/* Hover States: Rotate and Pulse (State B maintained) */
+#custom-cursor.hover .crosshair-wrapper svg {
+	animation: pulseRotate 1s infinite linear;
+}
+
+@keyframes pulseRotate {
+	0% { transform: rotate(0deg) scale(1); }
+	50% { transform: rotate(45deg) scale(1.2); }
+	100% { transform: rotate(90deg) scale(1); }
+}
+
+/* Left Click State (State A: Small filled circle) */
+#custom-cursor.click-left .crosshair-top,
+#custom-cursor.click-left .crosshair-center {
+	stroke: #ff0000;
+}
+#custom-cursor.click-left .crosshair-center-base { r: 3px; }
+#custom-cursor.click-left .crosshair-center { 
+	r: 2px;
+	fill: #ff0000;
+	stroke-width: 0;
+}
+
+/* Right Click State (State A: Small filled circle) */
+#custom-cursor.click-right .crosshair-top,
+#custom-cursor.click-right .crosshair-center {
+	stroke: #ffff00;
+}
+#custom-cursor.click-right .crosshair-center-base { r: 3px; }
+#custom-cursor.click-right .crosshair-center {
+	r: 2px;
+	fill: #ffff00;
+	stroke-width: 0;
+}
+
+/* ----------------------------------------- */
+/* CIRCLE POINTER                            */
+/* ----------------------------------------- */
+
+.circle-outer, .circle-inner-wrapper {
+	position: fixed;
+	top: -100px;
+	left: -100px;
+	pointer-events: none;
+	z-index: 9999999;
+	transform: translate(-50%, -50%);
+	border-radius: 50%;
+}
+
+.circle-outer {
+	width: 25px;
+	height: 25px;
+	background-color: rgba(0, 255, 0, 0.4);
+	transition: left 0.15s ease-out, top 0.15s ease-out, background-color 0.15s;
+}
+
+.circle-inner-wrapper {
+	width: 12px;
+	height: 12px;
+}
+
+.circle-inner {
+	width: 100%;
+	height: 100%;
+	background-color: #00ff00;
+	border-radius: 50%;
+	transition: transform 0.2s ease-out, background-color 0.15s;
+}
+
+/* Hover State (Revolve) */
+#custom-cursor.hover .circle-inner-wrapper {
+	animation: revolve 1s infinite linear;
+}
+
+#custom-cursor.hover .circle-inner {
+	transform: translateX(20px); /* Revolve around edge of outer (40/2) */
+}
+
+@keyframes revolve {
+	0% { transform: translate(-50%, -50%) rotate(0deg); }
+	100% { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+/* Click States */
+#custom-cursor.click-left .circle-outer { background-color: rgba(255, 0, 0, 0.4); }
+#custom-cursor.click-left .circle-inner { background-color: #ff0000; }
+
+#custom-cursor.click-right .circle-outer { background-color: rgba(255, 255, 0, 0.4); }
+#custom-cursor.click-right .circle-inner { background-color: #ffff00; }

@@ -2,6 +2,10 @@ import { useState, useEffect } from "react";
 import '../css/App.css';
 import Home from '../pages/home/Home.js';
 import Splash from '../pages/splash/Splash.js';
+import CustomCursor from '../components/CustomCursor.js';
+
+console.log(`ENV variable : REACT_APP_RUN_SPLASH_SCREEN : ${process.env.REACT_APP_RUN_SPLASH_SCREEN}`);
+const IS_RUN_SPLASH_SCREEN = process.env.REACT_APP_RUN_SPLASH_SCREEN  !== "false";
 
 function App() {
 	const [isSplashScreen, setIsSplashScreen] = useState(true);
@@ -24,7 +28,8 @@ function App() {
 
 	return (
 		<div className="App">
-			{isSplashScreen ? <Splash isFading={isFading} /> : <Home />}
+			<CustomCursor />
+			{isSplashScreen && IS_RUN_SPLASH_SCREEN ? <Splash isFading={isFading} /> : <Home />}
 		</div>
 	);
 }

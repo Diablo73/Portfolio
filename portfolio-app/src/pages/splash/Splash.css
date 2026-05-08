@@ -51,7 +51,7 @@
 	align-items: center;
 	width: var(--atom-size);
 	height: var(--atom-size);
-	animation: 8s atom infinite cubic-bezier(1, .25, 0, .75);
+	animation: fadeInAnimation 1s ease-in, 8s atom infinite cubic-bezier(1, .25, 0, .75);
 }
 @keyframes atom{
 	0% {
