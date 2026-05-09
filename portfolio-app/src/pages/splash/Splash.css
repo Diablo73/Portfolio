@@ -1,11 +1,10 @@
 .splash-container {
 	display: flex;
-	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	height: 100vh;
-	background-color: #171c28;
 	color: #ffffff;
+	pointer-events: none;
 }
 
 .splash-title {
@@ -254,4 +253,8 @@
 		opacity: 0;
 		visibility: hidden;
 	}
+}
+
+.splash-container > * {
+	pointer-events: auto;
 }
