@@ -77,7 +77,7 @@ export default function Signature() {
 				}
 			`}</style>
 
-			<svg width="450" height="200" viewBox="0 0 450 200" className="signature-canvas">
+			<svg width="310" height="120" viewBox="70 50 310 120" className="signature-canvas">
 
 				<text x="225" y="120" textAnchor="middle">
 					{letters.map((letter, i) => (
