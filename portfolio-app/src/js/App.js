@@ -3,7 +3,7 @@ import { Routes, Route, useNavigate, Navigate } from 'react-router-dom';
 import '../css/App.css';
 import Home from '../pages/home/Home.js';
 import Splash from '../pages/splash/Splash.js';
-import CustomCursor from '../components/CustomCursor.js';
+import CustomCursor from './CustomCursor.js';
 
 console.log(`ENV variable : REACT_APP_RUN_SPLASH_SCREEN : ${process.env.REACT_APP_RUN_SPLASH_SCREEN}`);
 const IS_RUN_SPLASH_SCREEN = process.env.REACT_APP_RUN_SPLASH_SCREEN  !== "false";

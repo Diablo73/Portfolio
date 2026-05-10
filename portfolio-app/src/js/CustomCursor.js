@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import '../css/customCursor.css';
+import '../css/CustomCursor.css';
 
 console.log(`ENV variable : REACT_APP_MOUSE_POINTER_TYPE : ${process.env.REACT_APP_MOUSE_POINTER_TYPE}`);
 const MOUSE_POINTER_TYPE_LIST = ['CROSSHAIR', 'CIRCLE'];
