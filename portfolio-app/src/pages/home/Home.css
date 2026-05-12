@@ -3,7 +3,7 @@
 	justify-content: space-between;
 	align-items: center;
 	height: 100vh;
-	padding: 0 10%;
+	padding: 0 5%;
 	box-sizing: border-box;
 	pointer-events: none; /* Let interactions pass through to particles in empty space */
 }
@@ -13,17 +13,29 @@
 }
 
 .text-section {
-	flex: 1;
+	flex: 1.5;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	margin-top: 4rem;
+	padding-right: 2rem;
 }
 
 .typing-text {
-	font-size: 4rem;
+	font-size: 1.15rem;
+	line-height: 1.6;
+	text-align: justify;
 	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 	color: #ffffff;
 	margin: 0;
+}
+
+.typing-text b,
+.typing-text strong {
+	background: radial-gradient(circle, rgba(115, 240, 180, 0.8) 0%, rgba(90, 240, 180, 0.1) 100%);
+	border-radius: 8px;
+	padding: 2px 8px;
+	border: 1px solid #7beca8;
 }
 
 .cursor {
@@ -39,7 +51,7 @@
 .image-section {
 	flex: 1;
 	display: flex;
-	justify-content: center;
+	justify-content: right;
 	align-items: center;
 }
 

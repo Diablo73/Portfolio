@@ -31,8 +31,32 @@
 	font-size: 1.1rem;
 	font-weight: 500;
 	transition: color 0.2s ease-in-out;
+	position: relative;
 }
 
-.nav-link:hover, .nav-link.active {
+.nav-link.active {
 	color: #00ff00;
+}
+
+.nav-link:hover:not(.active) {
+	color: #ffff00;
+}
+
+.nav-link::after {
+	content: '';
+	position: absolute;
+	left: -10%;
+	bottom: -6px;
+	width: 120%;
+	height: 3px;
+	background: linear-gradient(90deg, transparent 0%, currentColor 25%, currentColor 75%, transparent 100%);
+	opacity: 0;
+	transition: opacity 0.2s ease-in-out;
+	border-radius: 2px;
+	box-shadow: 0 0 5px currentColor; /* Creates the smudged glow effect */
+}
+
+.nav-link.active::after,
+.nav-link:hover::after {
+	opacity: 1;
 }

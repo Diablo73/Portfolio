@@ -1,4 +1,4 @@
-export const fetchGoogleSheetData = async () => {
+const fetchGoogleSheetData = async () => {
 	let gasApiId = process.env.REACT_APP_GAS_API_ID;
 
 	if (!gasApiId) {
@@ -16,3 +16,5 @@ export const fetchGoogleSheetData = async () => {
 		return {};
 	}
 };
+
+export const GOOGLE_SHEET_DATA_MAP = fetchGoogleSheetData();
